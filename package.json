@@ -1,0 +1,37 @@
+{
+  "name": "buffer-to-typed-array",
+  "version": "1.0.0",
+  "description": "convert buffers to typed arrays",
+  "main": "index.js",
+  "dependencies": {
+    "btop": "^1.0.0",
+    "defined": "^1.0.0",
+    "dtype": "^2.0.0"
+  },
+  "devDependencies": {
+    "tape": "^4.0.0"
+  },
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/livejs/typed-buffer.git"
+  },
+  "keywords": [
+    "buffer",
+    "typedarray",
+    "typed",
+    "bit",
+    "byte",
+    "bits",
+    "bytes",
+    "endian"
+  ],
+  "author": "ahdinosaur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/livejs/typed-buffer/issues"
+  },
+  "homepage": "https://github.com/livejs/typed-buffer#readme"
+}

@@ -1,6 +1,8 @@
 # buffer-to-typed-array
 
-stability: experimental. expect the unexpected.
+converts [`Buffer`](https://nodejs.org/docs/latest/api/buffer.html)s to [`TypedArray`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray)s.
+
+**stability: unstable. lacks adaquate tests.**
 
 ## install
 
@@ -21,8 +23,6 @@ var toInt16LE = toTypedArray({
 var buf = new Buffer([0x01, 0x02, 0x03, 0x04])
 var arr = toInt16LE(buf)
 ```
-
-check out [tests](https://github.com/livejs/buffer-to-typed-array/blob/master/test.js)
 
 ## license
 

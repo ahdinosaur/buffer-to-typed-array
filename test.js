@@ -11,14 +11,14 @@ test('require module', function (t) {
 })
 
 var fixtures = [
-  [{ dtype: 'uint8', endian: 'little' }, [0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09], [0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09]]
+  ['uint8', [0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09], [0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09]]
 ]
 
 test('convert buffers to typed arrays', function (t) {
   fixtures.forEach(function (fixture) {
     var fn = bufferToTypedArray(fixture[0])
     var i = new Buffer(fixture[1])
-    var C = getDataType(fixture[0].dtype)
+    var C = getDataType(fixture[0])
     var o = new C(fixture[2])
     t.deepEqual(fn(i), o, fixture[1] + " -> " + [].slice.call(o))
   })

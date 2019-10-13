@@ -9,4 +9,3 @@ function bufferToTypedArray (dtype) {
     return new TypedArray(toUint8(buf).buffer)
   }
 }
-    

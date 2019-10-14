@@ -4,8 +4,6 @@
   "description": "convert buffers to typed arrays",
   "main": "index.js",
   "dependencies": {
-    "btop": "^1.0.1",
-    "defined": "^1.0.0",
     "dtype": "^2.0.0"
   },
   "devDependencies": {
@@ -25,8 +23,7 @@
     "bit",
     "byte",
     "bits",
-    "bytes",
-    "endian"
+    "bytes"
   ],
   "author": "ahdinosaur",
   "contributors": [

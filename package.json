@@ -30,6 +30,9 @@
     "endian"
   ],
   "author": "ahdinosaur",
+  "contributors": [
+    "M.K. (https://github.com/mk-pmb)"
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ahdinosaur/buffer-to-typed-array/issues"
